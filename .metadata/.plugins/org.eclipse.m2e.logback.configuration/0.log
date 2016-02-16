@@ -173,3 +173,7 @@
 2016-02-07 21:12:06,920 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Workspaces\Java_WS\JavaLearning\src\main\resources
 2016-02-07 21:12:06,920 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2016-02-07 21:12:06,920 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Workspaces\Java_WS\JavaLearning\src\test\resources
+2016-02-13 20:29:06,060 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-02-13 20:29:06,155 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Workspaces\Java_WS\JavaLearning\src\main\resources
+2016-02-13 20:29:06,157 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-02-13 20:29:06,157 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Workspaces\Java_WS\JavaLearning\src\test\resources
