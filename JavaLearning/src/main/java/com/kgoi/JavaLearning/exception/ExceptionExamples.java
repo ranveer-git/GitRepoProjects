@@ -3,20 +3,31 @@ package com.kgoi.JavaLearning.exception;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 
-public class ExceptionExamples {
+public class ExceptionExamples implements AutoCloseable{
 
 	public static void main(String[] args) {
 		try {
-			ExceptionExamples.methodA();
+			//ExceptionExamples.methodA();
 		} catch (Exception e) {
 			System.out.println("Catch block Main Method");
 		}finally{
 			System.out.println("Inside Main Method Finally Block");
 		}
 	}
-	
+	public static void tryWithResources() throws ApplicationException, IOException{
+		try(FileWriter fileWriter = new FileWriter(new File("D:\\a1.txt"))){
+			System.out.println("hi1");
+		}
+		System.out.println("hi");
+		
+		try(ExceptionExamples exceptionExamples = new ExceptionExamples()){
+			System.out.println("hi1");
+		}
+		System.out.println("hi");
+	}
 	public static void methodA() throws FileNotFoundException{
 		try {
 			System.out.println(methodB());
@@ -68,6 +79,10 @@ public class ExceptionExamples {
 		}
 		
 		return str;
+	}
+	@Override
+	public void close() throws ApplicationException {
+		// TODO Auto-generated method stub
 	}
 
 }
